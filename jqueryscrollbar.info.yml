@@ -1,0 +1,5 @@
+name: jQuery ScrollBar
+description: jQuery CSS Customizable Scrollbar.
+package: User interface
+core_version_requirement: ^9
+type: module

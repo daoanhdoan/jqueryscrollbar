@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * JQuery Scrollbar.
+ *
+ * @see http://www.jacklmoore.com/autosize/
+ */
+/**
+ * Implements hook_init().
+ */
+function jqueryscrollbar_page_attachments(array &$attachments) {
+  $config = \Drupal::service('config.factory')->get('jqueryscrollbar.settings');
+  // Add the autosize library.
+  if ($config->get('trigger') || $config->get('enable')) {
+    $settings = array(
+      'enable' => $config->get('enable'),
+      'style' => $config->get('style'),
+      'trigger' => NULL,
+      'options' => []
+    );
+    if ($config->get('options')) {
+      $settings['options'] = $config->get('options');
+    }
+    $trigger = $config->get('trigger', 'textarea' . "\n");
+    if ($trigger) {
+      $trigger = explode("\n", $trigger);
+      $trigger = array_filter($trigger);
+      $trigger = implode(',', $trigger);
+      $settings['trigger'] = $trigger;
+    }
+    if ($settings['enable'] || $settings['trigger']) {
+      $attachments['#attached']['drupalSettings']['jqueryscrollbar'] = $settings;
+      $attachments['#attached']['library'][] = 'jqueryscrollbar/jqueryscrollbar';
+    }
+  }
+}

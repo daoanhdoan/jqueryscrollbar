@@ -1,0 +1,27 @@
+jqueryscrollbar.settings:
+  type: config_object
+  mapping:
+    enable:
+      type: boolean
+      label: 'Enable'
+    style:
+      type: string
+      label: 'Style'
+    options:
+      type: mapping
+      mapping:
+        showArrows:
+          type: boolean
+          label: 'Show Arrows'
+        scrollx:
+          type: string
+          label: 'Scroll X'
+        scrolly:
+          type: string
+          label: 'Scroll Y'
+    variant:
+      type: string
+      label: 'Variant'
+    trigger:
+      type: text
+      label: 'Trigger'

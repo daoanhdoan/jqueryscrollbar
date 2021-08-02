@@ -1,0 +1,5 @@
+jqueryscrollbar.settings:
+  route_name: jqueryscrollbar.settings
+  title: 'Jquery-Scrollbar Settings'
+  description: 'Configure settings for Jquery-Scrollbar.'
+  parent: system.admin_config_ui

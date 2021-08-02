@@ -1,0 +1,8 @@
+variant: 'minified'
+enable: false
+options:
+  showArrows: false
+  scrollx: ''
+  scrolly: ''
+style: 'inner'
+trigger: ''

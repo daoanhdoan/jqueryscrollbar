@@ -1,0 +1,7 @@
+jqueryscrollbar.settings:
+  path: /admin/config/user-interface/jqueryscrollbar
+  defaults:
+    _title: Jquery Scrollbar
+    _form: \Drupal\jqueryscrollbar\Form\JqueryScrollbarSettings
+  requirements:
+    _permission: 'administer jqueryscrollbar'

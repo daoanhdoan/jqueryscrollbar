@@ -1,0 +1,20 @@
+jqueryscrollbar:
+  js:
+    js/jqueryscrollbar.js: {}
+  dependencies:
+    - jqueryscrollbar/jqueryscrollbar_lib
+
+jqueryscrollbar_lib:
+  remote: https://github.com/gromo/jquery.scrollbar
+  license:
+    name: MIT
+    url: https://github.com/gromo/jquery.scrollbar/blob/master/license-mit.txt
+    gpl-compatible: true
+  js:
+    /libraries/jquery.scrollbar/jquery.scrollbar.min.js: { minified: true }
+  css:
+    component:
+      /libraries/jquery.scrollbar/jquery.scrollbar.css: {}
+  dependencies:
+    - core/jquery.once
+    - core/drupal
