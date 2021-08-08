@@ -2,7 +2,7 @@
     "name" : "daoanhdoan/jqueryscrollbar",
     "description": "jQuery ScrollBar - jQuery CSS Customizable Scrollbar.",
     "type" : "drupal-custom-module",
-    "license": "GPL-2.0",
+    "license": "GPL-2.0+",
     "extra": {
         "installer-name": "jqueryscrollbar"
     },
